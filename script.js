@@ -67,3 +67,14 @@ function checkStringIsEmpty (s) {
 }
 checkStringIsEmpty("karema")
 // checkStringIsEmpty("")
+
+//Write a JavaScript program that uses a try-catch block to catch and handle a 'RangeError' when accessing an array with an invalid index.
+function checkInvalidArray(arr , index) {
+ if (index < 0 || index >= arr.length) {
+  throw new Error ('index is invalid')
+ }
+ else {
+  console.log ("valid")
+}
+}
+checkInvalidArray([1, 2, 3, 4, 5] , 1)
